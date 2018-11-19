@@ -3140,7 +3140,7 @@ function writePodFile(result) {
 // The MLVision pod requires a minimum of iOS 9, otherwise the build will fail
 (isPresent(result.ml_kit) ? `` : `#`) + `platform :ios, '9.0'
 
-pod 'Firebase/Core', '~> 5.12.0'
+pod 'Firebase/Core'
 
 # Authentication
 ` + (!isPresent(result.authentication) || isSelected(result.authentication) ? `` : `#`) + `pod 'Firebase/Auth'
